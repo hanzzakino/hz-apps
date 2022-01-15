@@ -1,0 +1,92 @@
+//light
+$primary-fgcolor: rgb(104,106,109);
+$primary-accent: rgb(53, 195, 238);
+$secondary-fgcolor: rgb(150,150,150);
+
+$primary-bgcolor: rgb(253,253,253);
+$secondary-bgcolor: rgb(255,255,255);
+$secondary-bgcolor-2: rgb(220,220,220);
+
+
+//dark
+
+/*$primary-fgcolor: rgb(253,254,254);
+$primary-accent: rgb(53, 195, 238);
+$secondary-fgcolor: rgb(240,240,240);
+
+$primary-bgcolor: rgb(14,16,19);
+$secondary-bgcolor: rgb(30,30,30);
+$secondary-bgcolor-2: rgb(0,0,0);*/
+
+
+
+/* simenc */
+.title{
+  padding: 0;
+  margin: 0;
+  color: $primary-accent;
+}
+.input {
+  margin: 10px;
+  padding: 22px 10px 22px 10px;
+  width: 100%;
+  max-width: 100%;
+  height: 25vh;
+  overflow-y: scroll;
+  background-color: $secondary-bgcolor;
+  color: $primary-fgcolor;
+  border: none;
+}
+.inputlabel {
+  padding: 0px 3px 0px 3px;
+  margin: 0px 3px 0px 3px;
+  font-size: 1.3rem;
+  color: $secondary-fgcolor;
+}
+.inputkey {
+  margin: 10px;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: $secondary-bgcolor;
+  color: $primary-fgcolor;
+  border: none;
+}
+.invalid {
+  transition: 0.5s;
+  background-color: rgb(245,216,216);
+}
+.output {
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  width: 35vw;
+  max-width: 100%;
+  height: 45vh;
+  overflow-y: scroll;
+  background-color: $secondary-bgcolor;
+  color: $primary-fgcolor;
+  border: none;
+}
+@media (max-width: 770px) {
+  .input {
+    margin: 10px 0px 10px 5px;
+    padding: 22px 10px 22px 10px;
+    width: 90%;
+    height: 20vh;
+  }
+  .inputkey {
+    margin: 10px 0px 10px 5px;
+    padding: 0px 10px 0px 10px;
+    width: 90%;
+    height: 6vh;
+  }
+  .output {
+    margin: 10px 0px 10px 5px;
+    padding: 5px 10px 5px 10px;
+    width: 90%;
+    height: 20vh;
+  }
+}
+
+
+
