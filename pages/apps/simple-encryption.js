@@ -37,7 +37,12 @@ export default function SimpleEncryption(props) {
     navigator.clipboard.writeText(stringOutput);
   }
 
-  return (
+  return (<>
+    <Head>
+        <title>HZ Apps - Simple Encryption</title>
+    </Head>
+
+    
     <div className={'hzcontainer'}>
       <br /><br /><br />
       <div className={'hzrow'}>
@@ -104,7 +109,7 @@ export default function SimpleEncryption(props) {
 
       
     </div>
-  )
+  </>)
 
 
 }

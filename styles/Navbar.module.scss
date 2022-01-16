@@ -1,0 +1,70 @@
+//light
+$primary-fgcolor: rgb(18,18,18);
+$primary-accent: rgb(53, 195, 238);
+$secondary-fgcolor: rgb(150,150,150);
+
+$primary-bgcolor: rgb(255,255,255);
+$secondary-bgcolor: rgb(253,253,253);
+$secondary-bgcolor-2: rgb(220,220,220);
+
+
+//dark
+
+/*$primary-fgcolor: rgb(253,254,254);
+$primary-accent: rgb(53, 195, 238);
+$secondary-fgcolor: rgb(240,240,240);
+
+$primary-bgcolor: rgb(14,16,19);
+$secondary-bgcolor: rgb(30,30,30);
+$secondary-bgcolor-2: rgb(0,0,0);*/
+
+.navbar {
+	width: 100%;
+	padding-top: 4px;
+	height: 48px;
+	/*background-color: yellow;*/
+	/*background-color: $primary-bgcolor;*/
+	position: fixed;
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	/*overflow: hidden;*/ /* Disable horizontal scroll */
+  	transition: 0.5s;
+  	color: $primary-fgcolor;
+  	display: flex;
+}
+
+.brand {
+	display: flex !important;
+	align-items: center !important;
+}
+.logo {
+	width: 40px;
+	height: 40px;
+	margin: 4px;
+	padding: 0;
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	overflow: hidden;
+}
+.logotext {
+	font-family: "Ubuntu";
+	font-weight: bolder;
+	font-size: 2.2rem;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.navbtn {
+	font-family: "Roboto";
+	text-decoration: none;
+	margin: 6px 8px 3px 8px;
+	padding: 7px 15px 5px 15px;
+	font-size: 1.3rem;
+	color: $primary-fgcolor;
+}
