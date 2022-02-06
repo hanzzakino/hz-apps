@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
 //light
 $primary-fgcolor: rgb(18,18,18);
 $primary-accent: rgb(53, 195, 238);
@@ -10,28 +14,27 @@ $secondary-bgcolor-2: rgb(220,220,220);
 
 //dark
 
-/*$primary-fgcolor: rgb(253,254,254);
-$primary-accent: rgb(53, 195, 238);
-$secondary-fgcolor: rgb(240,240,240);
+// $primary-fgcolor: rgb(253,254,254);
+// $primary-accent: rgb(53, 195, 238);
+// $secondary-fgcolor: rgb(240,240,240);
 
-$primary-bgcolor: rgb(14,16,19);
-$secondary-bgcolor: rgb(30,30,30);
-$secondary-bgcolor-2: rgb(0,0,0);*/
+// $primary-bgcolor: rgb(14,16,19);
+// $secondary-bgcolor: rgb(30,30,30);
+// $secondary-bgcolor-2: rgb(0,0,0);
 
 .navbar {
+	height: 56px;
+	padding-top: 5px;
 	width: 100%;
-	padding-top: 4px;
-	height: 48px;
-	/*background-color: yellow;*/
-	/*background-color: $primary-bgcolor;*/
 	position: fixed;
   	z-index: 1; /* Sit on top */
   	left: 0;
   	top: 0;
-  	/*overflow: hidden;*/ /* Disable horizontal scroll */
   	transition: 0.5s;
   	color: $primary-fgcolor;
   	display: flex;
+  	background-color: $primary-bgcolor;
+  	filter: drop-shadow(0px 3px 5px rgb(0,0,0,0.1));
 }
 
 .brand {
@@ -67,4 +70,12 @@ $secondary-bgcolor-2: rgb(0,0,0);*/
 	padding: 7px 15px 5px 15px;
 	font-size: 1.3rem;
 	color: $primary-fgcolor;
+}
+
+
+@media (max-width: 770px) {
+	.navbar {
+		height: fit-content;
+		padding-bottom: 20px;
+	}
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import SE_styles from '../../styles/SimpleEncryption.module.scss'
 import {useState,useEffect} from 'react'
+import { Navbar } from '../../components/navbar'
 
 export default function SimpleEncryption(props) {
   const enc = require('../../hzmodules/CharacterEncryption.js');
@@ -23,6 +24,7 @@ export default function SimpleEncryption(props) {
     }
   } , [keyInput, encryptMode, enc, stringInput])
 
+  
   //setting the state is asynchronous
   const textBoxChanged = (e) => {
     setStringInput(e.target.value);
@@ -37,11 +39,14 @@ export default function SimpleEncryption(props) {
     navigator.clipboard.writeText(stringOutput);
   }
 
+
   return (<>
     <Head>
         <title>HZ Apps - Simple Encryption</title>
     </Head>
 
+    <Navbar />
+    <br />
     
     <div className={'hzcontainer'}>
       <br /><br /><br />
@@ -109,7 +114,7 @@ export default function SimpleEncryption(props) {
 
       
     </div>
-  </>)
+  </>);
 
 
 }

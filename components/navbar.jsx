@@ -17,6 +17,7 @@ export const Navbar = () => {
 			
 			<div className="hzcontainer">
 				<div className="hzrow">
+
 					<div className={"hzcomlumn "+styles.brand}>
 						<div className={styles.logo} >
 							<img src="/hz-logo-blk.svg" alt="HZ logo" layout="fill"/>
@@ -27,7 +28,7 @@ export const Navbar = () => {
 					<Link href="/"><a  className={"hzcomlumn "+styles.navbtn} >Home</a></Link>
 					<Link href="/"><a  className={"hzcomlumn "+styles.navbtn} >Apps</a></Link>
 					<Link href="/"><a  className={"hzcomlumn "+styles.navbtn} >Portfolio</a></Link>
-					
+
 				</div>
 			</div>
 			

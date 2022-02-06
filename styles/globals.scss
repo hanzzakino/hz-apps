@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 //light
 $primary-fgcolor: rgb(104,106,109);
 $primary-accent: rgb(53, 195, 238);
@@ -10,13 +13,13 @@ $secondary-bgcolor-2: rgb(220,220,220);
 
 //dark
 
-/*$primary-fgcolor: rgb(253,254,254);
-$primary-accent: rgb(53, 195, 238);
-$secondary-fgcolor: rgb(240,240,240);
+// $primary-fgcolor: rgb(253,254,254);
+// $primary-accent: rgb(53, 195, 238);
+// $secondary-fgcolor: rgb(240,240,240);
 
-$primary-bgcolor: rgb(14,16,19);
-$secondary-bgcolor: rgb(30,30,30);
-$secondary-bgcolor-2: rgb(0,0,0);*/
+// $primary-bgcolor: rgb(14,16,19);
+// $secondary-bgcolor: rgb(30,30,30);
+// $secondary-bgcolor-2: rgb(0,0,0);
 
 
 html,
@@ -58,10 +61,12 @@ code {
 .hzcontainer {
   margin-left: 10%;
   margin-right: 10%;
+  height: fit-content;
 }
 
 .hzrow {
     display: flex;
+    width: 100%;
 }
 
 .hzrowunresponsive {
@@ -69,7 +74,7 @@ code {
 }
 
 .hzcolumn {
-    flex: 50%;
+  flex: 50%;
 }
 
 .hzcolumnfit {
@@ -125,8 +130,8 @@ code {
 }
 .hzabtn {
   text-decoration: none;
-  margin: 2px;
   padding: 8px 15px 8px 15px;
+  width: fit-content;
   border-radius: 5px;
   color: $primary-fgcolor;
   background-color: $secondary-bgcolor;
@@ -149,25 +154,28 @@ code {
 
 
 /* Development Layout Preview */
-/*
-.hzrow {
-  background-color: lightyellow;
-  border: 1px dashed rgba(255,0,0,0.4);
-}
-.hzcolumn {
-  background-color: lightblue;
-  border: 1px dashed rgba(0,0,255,0.4);
-}
-.hzcolumnfit {
-  background-color: violet;
-  border: 1px dashed rgba(0,0,255,0.4);
-}
-.hzcolumnfitheight {
-  background-color: skyblue;
-  border: 1px dashed rgba(0,0,255,0.4);
-}
-.hzrowunresponsive {
-  background-color: orange;
-  border: 1px dashed rgba(255,0,0,0.4);
-}
-*/
+// .hzcontainer {
+//   background-color: lightgreen;
+//   border: 1px dashed rgba(255,0,0,0.4);
+// }
+// .hzrow {
+//   background-color: lightyellow;
+//   border: 1px dashed rgba(255,0,0,0.4);
+// }
+// .hzcolumn {
+//   background-color: lightblue;
+//   border: 1px dashed rgba(0,0,255,0.4);
+// }
+// .hzcolumnfit {
+//   background-color: violet;
+//   border: 1px dashed rgba(0,0,255,0.4);
+// }
+// .hzcolumnfitheight {
+//   background-color: skyblue;
+//   border: 1px dashed rgba(0,0,255,0.4);
+// }
+// .hzrowunresponsive {
+//   background-color: orange;
+//   border: 1px dashed rgba(255,0,0,0.4);
+// }
+
